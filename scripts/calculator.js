@@ -3,9 +3,19 @@ const scratchTop = document.getElementById("topline")
 const scratchBottom = document.getElementById("bottomline")
 const buttons = document.querySelectorAll(".button");
 
+let previouslyCalculated = false;
 
 function updateTopScratch(a) {
-    scratchTop.textContent += a
+    
+    if (previouslyCalculated) {
+        scratchTop.textContent = '';
+        previouslyCalculated = false;
+        scratchTop.textContent = a;
+    }
+    else {
+        scratchTop.textContent += a
+    }
+    
 }
 
 function updateBottomScratch(a) {
@@ -16,6 +26,8 @@ function clearScratchpad() {
     scratchBottom.textContent = '';
     scratchTop.textContent = '';
 }
+
+
 
 
 
@@ -69,6 +81,7 @@ buttons.forEach((button) =>
             const equate = eval(scratchTop.textContent + scratchBottom.textContent);
             clearScratchpad()
             updateTopScratch(equate);
+            previouslyCalculated = true;
         }
       }
     });
