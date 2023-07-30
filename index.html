@@ -2,55 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="stylesheets/main.css">
-    <script src="https://kit.fontawesome.com/869cf29f81.js" crossorigin="anonymous"></script>
-    <title>Home | AS Portfolio</title>
-
-    <style>
-
-    </style>
+    
+    <title>Document</title>
 </head>
 <body>
-    <nav class="w3-bar w3-blue">
-        <a href="#" class="w3-bar-item w3-hover-sand w3-hover-text-blue w3-button w3-mobile"><i class="fa fa-home"></i></a>
-        <a href="" class="w3-bar-item w3-hover-sand w3-hover-text-blue w3-button w3-right w3-mobile">Item 2</a>
-        <a href="" class="w3-bar-item w3-hover-sand w3-hover-text-blue w3-button w3-right w3-mobile">Item 3</a>
-        <a href="" class="w3-bar-item w3-hover-sand w3-hover-text-blue w3-button w3-right w3-mobile">Item 4</a>
-    </nav>
-    
-    <div class="w3-container w3-section w3-center">
-        <div class="w3-row">
-            <a href="" class="w3-button" id="clearbutton">C</a>
-        </div>
-        <div class="w3-row">
-            <a href="" class="w3-button" id="onebutton">1</a>
-            <a href="" class="w3-button" id="twobutton">2</a>
-            <a href="" class="w3-button" id="threebutton">3</a>
-            <a href="" class="w3-button" id="divbutton">/</a>
-        </div>
-        <div class="w3-row">
-            <a href="" class="w3-button" id="fourbutton">4</a>
-            <a href="" class="w3-button" id="fivebutton">5</a>
-            <a href="" class="w3-button" id="sixbutton">6</a>
-            <a href="" class="w3-button" id="multbutton">*</a>
-        </div>
-        <div class="w3-row">
-            <a href="" class="w3-button" id="sevenebutton">7</a>
-            <a href="" class="w3-button" id="eightbutton">8</a>
-            <a href="" class="w3-button" id="ninebutton">9</a>
-            <a href="" class="w3-button" id="subbutton">-</a>
-        </div>
-        <div class="w3-row">
-            <a href="" class="w3-button" id="zerobutton">0</a>
-            <a href="" class="w3-button" id="decbutton">.</a>
-            <a href="" class="w3-button" id="equalbutton">=</a>
-            <a href="" class="w3-button" id="plusbutton">+</a>
-        </div>
 
+    <div class="calculator">
+        <div class="scratchpad" id="scratchpad">
+            <p id="topline"></p>
+            <p id="bottomline"></p>
+        </div>
+        <button class="button function" id="clear">C</button>
+        <button class="button function" id="backspace">B/S</button>
+        <button class="button number" id="one" data-key="1">1</button>
+        <button class="button number" id="two" data-key="2">2</button>
+        <button class="button number" id="three" data-key="3">3</button>
+        <button class="button function" id="divide" data-key="/">/</button>
+        <button class="button number" id="four" data-key="4">4</button>
+        <button class="button number" id="five" data-key="5">5</button>
+        <button class="button number" id="six" data-key="6">6</button>
+        <button class="button function" id="multiply" data-key="*">X</button>
+        <button class="button number" id="seven" data-key="7">7</button>
+        <button class="button number" id="eight" data-key="8">8</button>
+        <button class="button number" id="nine" data-key="9">9</button>
+        <button class="button function" id="subtract" data-key="-">-</button>
+        <button class="button function" id="posneg">+/-</button>
+        <button class="button number" id="zero" data-key="0">0</button>
+        <button class="button function" id="decimal" data-key=".">.</button>
+        <button class="button function" id="add" data-key="+">+</button>
+        <button class="button function" id="equals" data-key="=">=</button>
     </div>
-        
+    <script src="scripts/calculator.js"></script>
+    
+
 </body>
 </html>
